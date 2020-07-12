@@ -57,12 +57,34 @@ a {
     text-decoration: none;
     color: #000;
 }
+
+img {
+    width: 100%;
+}
+
+.full-width {
+    width: 100vw;
+}
+
+.min-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
 /*ヘッダーここから*/
 .header {
     position: fixed;
     width: 100%;
     background-color: rgb(000, 000, 000,0.5);
     padding: 20px;
+    z-index: 1;
 }
 
 .header-inner {
@@ -76,7 +98,7 @@ a {
 }
 
 .header .logo a {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #fff;
     display: block;
 }
@@ -110,6 +132,102 @@ a {
 .header-inner label {
     display: none;
 }
+
+/*hero start*/
+.hero {
+    position: relative;
+    background-image: url(../../assets/images/kv.jpg);
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
+    width: 100%;
+    height: 80vh;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 5em;
+    text-shadow: 10px 10px 5px #000;
+}
+/*hero end*/
+
+/*concept start*/
+.min-inner {
+    padding-top: 120px;
+}
+
+.concept-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sec-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.sec-title::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid;
+}
+
+.concept-img {
+    width: calc(50% - 40px);
+}
+
+.sub-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sub-title::before,
+.sub-title::after {
+    display: inline-block;
+    content: "";
+    width: 32px;
+    height: 2px;
+    vertical-align: middle;
+    background-color: #000;
+}
+
+.sub-title::before {
+    margin-right: 8px;
+}
+
+.sub-title::after {
+    margin-left: 8px;
+}
+
+.concept-text {
+    width: calc(50% - 40px);
+    height: 630px;
+    overflow-y: auto;
+}
+
+.concept-text p {
+    margin: 0 0 5px;
+}
+/*concept end*/
+
+/*application start*/
+.application .full-
+/*application end*/
+
 
 
 
