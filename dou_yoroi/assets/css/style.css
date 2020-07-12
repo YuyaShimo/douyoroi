@@ -62,7 +62,7 @@ img {
     width: 100%;
 }
 
-.full-width {
+.full-inner {
     width: 100vw;
 }
 
@@ -77,6 +77,18 @@ h3 {
 
 h4 {
     font-size: 2.5rem;
+}
+
+.sec-title::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 2px solid;
 }
 /*ヘッダーここから*/
 .header {
@@ -173,17 +185,7 @@ h4 {
     margin-bottom: 60px;
 }
 
-.sec-title::after {
-    position: absolute;
-    display: inline-block;
-    content: "";
-    width: 20px;
-    height: 2px;
-    bottom: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-bottom: 2px solid;
-}
+
 
 .concept-img {
     width: calc(50% - 40px);
@@ -225,7 +227,9 @@ h4 {
 /*concept end*/
 
 /*application start*/
-.application .full-
+.application > .full-inner {
+    padding-top: 120px;
+}
 /*application end*/
 
 
