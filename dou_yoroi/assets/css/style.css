@@ -227,8 +227,47 @@ h4 {
 /*concept end*/
 
 /*application start*/
-.application > .full-inner {
+.application > .sec-title {
     padding-top: 120px;
+}
+
+.app-img {
+    width: 60%;
+}
+
+.app-img-bg {
+    background-image: url(../../assets/images/main_02.jpg);
+    width: 100%;
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.app-text {
+    width: 40%;
+}
+
+.app-text-inner {
+    position: relative;
+    padding-left: 60px;
+}
+
+.app-text-inner::before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 200px);
+    height: calc(100% + 200px);
+    background-color: #f4f4f4;
+    right: 0;
+    bottom: -100px;
+    z-index: -1;
+}
+
+.app-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 /*application end*/
 
